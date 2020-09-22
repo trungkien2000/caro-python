@@ -107,6 +107,7 @@ class Caro(tkinter.Tk):
 
     # Hàm để tạo lại trò chơi mới khi đã có người chiến thắng
     def newGame(self):
+        self.memory.clear()
         for x in range(Ox):
             for y in range(Oy):
                 self.Buttons[x, y]["text"] = ""
