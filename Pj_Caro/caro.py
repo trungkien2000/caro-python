@@ -114,7 +114,8 @@ class Caro(tkinter.Tk):
                 self.Buttons[x, y].configure(bg='light gray')
 
 
-Ox = 10  # số ô theo chiều ngang
-Oy = 20  # số ô theo chiều dọc
-root = Caro(Ox, Oy)  # khởi tạo trò chơi
-root.mainloop()
+if __name__ == "__main__":
+    Ox = 10  # số ô theo chiều ngang
+    Oy = 20  # số ô theo chiều dọc
+    root = Caro(Ox, Oy)  # khởi tạo trò chơi
+    root.mainloop()
